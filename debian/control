@@ -9,8 +9,8 @@ Build-Depends: debhelper (>= 11),
                python3-all (>= 3.5),
                python3-setuptools
 Homepage: https://www.openwebrx.de/
-Vcs-Browser: https://github.com/luarvique/openwebrx
-Vcs-Git: https://github.com/luarvique/openwebrx.git
+Vcs-Browser: https://github.com/ysamouhos/openwebrx
+Vcs-Git: https://github.com/ysamouhos/openwebrx.git
 
 Package: openwebrx
 Architecture: all
