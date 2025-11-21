@@ -19,7 +19,7 @@ GIT_PYCSDR_ETI=https://github.com/luarvique/pycsdr-eti.git
 GIT_JS8PY=https://github.com/jketterl/js8py.git
 GIT_SKIMMER=https://github.com/luarvique/csdr-skimmer.git
 GIT_SOAPYSDRPLAY3=https://github.com/luarvique/SoapySDRPlay3.git
-GIT_OPENWEBRX=https://github.com/luarvique/openwebrx.git
+GIT_OPENWEBRX=https://github.com/ysamouhos/openwebrx.git
 GIT_ACARSDEC=https://github.com/luarvique/acarsdec.git
 GIT_REDSEA=https://github.com/windytan/redsea.git
 GIT_DUMP978=https://github.com/flightaware/dump978.git
@@ -63,20 +63,20 @@ if [ "${1:-}" == "--ask" ]; then
 else
 	# build all by default
 	BUILD_OWRX=y
-	BUILD_CSDR=y
-	BUILD_PYCSDR=y
-	BUILD_OWRXCONNECTOR=y
-	BUILD_SOAPYSDRPLAY3=y
-	BUILD_CODECSERVER=y
-	BUILD_DIGIHAM=y
-	BUILD_PYDIGIHAM=y
-	BUILD_CSDR_ETI=y
-	BUILD_PYCSDR_ETI=y
-	BUILD_JS8PY=y
-	BUILD_REDSEA=y
-	BUILD_ACARSDEC=y
-	BUILD_DUMP978=y
-	BUILD_SKIMMER=y
+	BUILD_CSDR=n
+	BUILD_PYCSDR=n
+	BUILD_OWRXCONNECTOR=n
+	BUILD_SOAPYSDRPLAY3=n
+	BUILD_CODECSERVER=n
+	BUILD_DIGIHAM=n
+	BUILD_PYDIGIHAM=n
+	BUILD_CSDR_ETI=n
+	BUILD_PYCSDR_ETI=n
+	BUILD_JS8PY=n
+	BUILD_REDSEA=n
+	BUILD_ACARSDEC=n
+	BUILD_DUMP978=n
+	BUILD_SKIMMER=n
 	CLEAN_OUTPUT=y
 fi
 
