@@ -1,3 +1,6 @@
+**1.2.100a**
+- Added Initial Ka9q Radio source
+  
 **1.2.99**
 - Fixing RTLSDR issues caused by 'dump978-fa'.
 - Switched to 'dump978-fa-minimal' package.
