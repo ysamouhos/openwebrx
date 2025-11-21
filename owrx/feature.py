@@ -76,6 +76,7 @@ class FeatureDetector(object):
         "sddc_soapy": ["soapy_connector", "soapy_sddc"],
         "hpsdr": ["hpsdr_connector"],
         "runds": ["runds_connector"],
+        "ka9q": ["ka9q_connector"],
         # optional features and their requirements
         "digital_voice_digiham": ["digiham", "codecserver_ambe"],
         "digital_voice_freedv": ["freedv_rx"],
@@ -662,6 +663,14 @@ class FeatureDetector(object):
         allows using R&S radios via EB200 or Ammos.
         """
         return self._check_connector("runds_connector", LooseVersion("0.2"))
+
+    def has_ka9q_connector(self):
+        """
+        The [OWRX Connector](https://github.com/jketterl/owrx_connector)
+        provides direct interfacing between KA9Q Radiod Streams (https://github.com/ka9q/ka9q-radio) and OpenWebRX.
+        You must first install and run Ka9Q Radiod and add streams
+        """
+        return self.command_is_runnable("pcmrecord -h")
 
     def has_codecserver_ambe(self):
         """
