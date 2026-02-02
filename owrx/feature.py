@@ -109,6 +109,7 @@ class FeatureDetector(object):
         "skimmer": ["csdr_skimmer"],
         "sonde": ["sonde_rs"],
         "mp3": ["lame"],
+        "streamer": ["streamer"],
     }
 
     def feature_availability(self):
@@ -896,3 +897,10 @@ class FeatureDetector(object):
         from the OpenWebRX repositories.
         """
         return os.path.isdir("/usr/share/aprs-symbols")
+
+    def has_streamer(self):
+        """
+        OpenWebRX uses socat to stream iq to external decoders
+        """
+        return self.command_is_runnable("socat -h")
+

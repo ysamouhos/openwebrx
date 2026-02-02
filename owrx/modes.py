@@ -392,6 +392,15 @@ class Modes(object):
             service=True,
             squelch=False
         ),
+        DigitalMode(
+            "streamer",
+            "Streamer",
+            underlying=["empty"],
+            bandpass=Bandpass(-18000, 18000),
+            requirements=["streamer"],
+            service=True,
+            squelch=False
+        ),
         # Server-side audio recording is a background service only.
         # See JavaScript code for client-side audio recording.
         ServiceOnlyMode(

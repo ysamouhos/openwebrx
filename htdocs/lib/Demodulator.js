@@ -25,6 +25,9 @@ function Filter(demodulator) {
         case 'ism':
             max_bw = 600000;
             break;
+        case 'streamer':
+            max_bw = 36000;
+            break;
         default:
             max_bw = parseInt(audioEngine.getOutputRate() / 2);
             break;

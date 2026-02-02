@@ -781,6 +781,9 @@ class DspManager(SdrSourceEventClient, ClientDemodulatorSecondaryDspEventClient)
         elif mod == "sonde-m20":
             from csdr.chain.sonde import M20Demodulator
             return M20Demodulator()
+        elif mod == "streamer":
+            from csdr.chain.streamer import StreamerDemodulator
+            return StreamerDemodulator()
         elif mod == "audio":
             # this should only run as a service though
             from csdr.chain.toolbox import AudioRecorder

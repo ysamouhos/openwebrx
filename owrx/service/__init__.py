@@ -390,6 +390,9 @@ class ServiceHandler(SdrSourceEventClient):
         elif mod == "sonde-m20":
             from csdr.chain.sonde import M20Demodulator
             return M20Demodulator(service=True)
+        elif mod == "streamer":
+            from csdr.chain.streamer import StreamerDemodulator
+            return StreamerDemodulator(service=True)
         elif mod == "meteor-lrpt":
             from csdr.chain.satellite import MeteorLrptDemodulator
             return MeteorLrptDemodulator(service=True)
